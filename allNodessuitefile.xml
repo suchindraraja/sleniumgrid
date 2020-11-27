@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Suite" parallel="tests">
+	<test name="Test1">
+		<parameter name="nodeUrl" value="http://192.168.31.61:5555/wd/hub"></parameter>
+		<parameter name="siteUrl" value="http://www.facebook.com"></parameter>
+		<classes>
+			<class name="selgrid.AllNodes"></class>
+		</classes>
+	</test>
+	<test name="Test2">
+		<parameter name="nodeUrl" value="http://192.168.31.61:6666/wd/hub"></parameter>
+		<parameter name="siteUrl" value="https://www.instagram.com/"></parameter>
+		<classes>
+			<class name="selgrid.AllNodes"></class>
+		</classes>
+	</test>
+	<test name="Test3">
+		<parameter name="nodeUrl" value="http://192.168.31.61:7777/wd/hub"></parameter>
+		<parameter name="siteUrl" value="http://www.gmail.com"></parameter>
+		<classes>
+			<class name="selgrid.AllNodes"></class>
+		</classes>
+	</test>
+</suite> 
